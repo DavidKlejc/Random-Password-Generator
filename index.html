@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="title">Random Password Generator</h1>
+        <h3 class="password-container">Password</h3>
+        <form class="form">
+            <!-- Range slider and input box to dictate length of password -->
+            <label for="numberOfCharacters">Number of Characters</label>
+            <div class="num-of-characters-container">
+                <input type="range" min="8" max="64" value="16" id="numberOfCharactersRange">
+                <input class="number-input" type="number" min="8" max="64" value="16" id="numberOfCharacters">
+            </div>
+            <!-- Checkbox to include symbols -->
+            <label for="includeSymbols">Include Symbols</label>
+            <input type="checkbox" id="includeSymbols">
+            <!-- Checkbox to include uppercase characters -->
+            <label for="includeUppercaseCharacters">Include Uppercase Characters</label>
+            <input type="checkbox" id="includeUppercaseCharacters">
+            <!-- Checkbox to include lowercase characters -->
+            <label for="includeLowercaseCharacters">Include Lowercase Characters</label>
+            <input type="checkbox" id="includeLowercaseCharacters">
+            <!-- Button to generate password -->
+            <button type="submit" class="btn">Generate Password</button>
+        </form>
+    </div>
+</body>
+</html>
