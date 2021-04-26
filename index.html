@@ -11,14 +11,17 @@
 <body>
     <div class="main-container">
         <h1 class="title">Random Password Generator</h1>
-        <h3 class="password-container">Password</h3>
-        <form class="form">
+        <h3 class="password-container" id="">Password</h3>
+        <form id="generatePasswordForm" class="form">
             <!-- Range slider and input box to dictate length of password -->
             <label for="numberOfCharacters">Number of Characters</label>
             <div class="num-of-characters-container">
                 <input type="range" min="8" max="64" value="16" id="numberOfCharactersRange">
                 <input class="number-input" type="number" min="8" max="64" value="16" id="numberOfCharacters">
             </div>
+            <!-- Checkbox to include numbers -->
+            <label for="includeNumbers">Include Numbers</label>
+            <input type="checkbox" id="includeNumbers">
             <!-- Checkbox to include symbols -->
             <label for="includeSymbols">Include Symbols</label>
             <input type="checkbox" id="includeSymbols">
