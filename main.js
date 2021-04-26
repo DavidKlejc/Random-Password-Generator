@@ -46,7 +46,6 @@ function asciiRange(low, high) {
 
 function generatePassword(characterAmount, includeNumbers, includeSymbols, includeLowercase, includeUppercase) {
     let asciiCodes = [];
-    const test = ['t', 'e'];
     if(includeNumbers) {
         asciiCodes = asciiCodes.concat(NUMBER_ASCII_CODE);
     } 
